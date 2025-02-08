@@ -1,5 +1,5 @@
 # Apple Stock Price Prediction Using Deep Learning and Regression Methods
-https://github.com/AHMEDNUSARI/Dataguess_TeknolojiTask/blob/main/Stock.png
+
 ![(https://github.com/AHMEDNUSARI/Dataguess_TeknolojiTask/blob/main/Stock.png)](https://github.com/AHMEDNUSARI/Dataguess_TeknolojiTask/blob/main/Stock.png)
 ## 📌 Overview
 This project was developed as part of an assessment task assigned by Dataguess Teknoloji. The objective is to build a machine learning model to predict Apple's stock price movements using historical financial data. This task evaluates technical expertise, problem-solving abilities, and familiarity with financial data by implementing various prediction techniques, including deep learning and regression methods.
@@ -72,7 +72,7 @@ As mentioned earlier, there are two training processes, and each has its own Pyt
     1. Run the script using the following command:
        python TrainDefultData.py
     2. The script will automatically download Apple stock price data between January 1, 2008, and February 1, 2025.
-    3. It will then perform data processing and select default features: ['Open', 'High', 'Low', 'Volume', 'MA_10', 'MACD', 'OBV'].
+    3. It will then perform data processing and select default features: ['Open', 'High', 'Low', 'Volume', 'MA_10', 'MACD', 'OBV']. This default features didnot selected randomly, but after training and trying verious feature combinataion, this combination gave higher performance as will be exaplined later
     4. The user will be prompted to enter 0 or 1 to select the model type:
        * 0: Linear Regression
        * 1: LSTM with Attention Mechanism
@@ -97,3 +97,33 @@ As mentioned earlier, there are two training processes, and each has its own Pyt
       * 1: LSTM with Attention Mechanism
     4. After selecting the model, the script will train the model on the provided dataset, visualize the results, and display the evaluation metrics:
       * RMSE, MAPE, and R².
+   
+
+# Apple Stock Price Prediction with Deep Learning & Regression 🏦📈
+
+## Overview
+This repository contains models that predict the **Apple stock price** using **Linear Regression** and **LSTM with Attention Mechanism**. The models are trained on historical financial data, and the aim is to assess technical expertise, problem-solving abilities, and familiarity with financial data.
+
+
+
+### Results of Default Training 🏅
+
+#### 1. **Linear Regression Model** 🤖  
+   - **RMSE**: 2.9001  
+   - **MAPE**: 0.0120  
+   - **R²**: 0.9914  
+
+   The **Linear Regression** model achieved impressive performance with an **R² value** of 0.9914, which means the model explains **99.14%** of the variance in the stock prices. This suggests that Linear Regression has captured the underlying linear relationships between the features and stock price movements effectively. The **RMSE** of 2.9001 indicates a reasonable error level in price prediction, while the **MAPE** value of 0.0120 shows that the model performs well in terms of percentage error.
+
+   - **Prediction Plot**:  
+     ![Linear Regression Prediction Plot](https://github.com/AHMEDNUSARI/Dataguess_TeknolojiTask/blob/main/RegressionResult.png)
+
+#### 2. **LSTM with Attention Mechanism** 🧠  
+   - **RMSE**: 3.08  
+   - **MAPE**: 0.013  
+   - **R²**: 0.9902  
+
+   The **LSTM with Attention Mechanism** model also performed well with an **R² value** of 0.9902, explaining **99.02%** of the variance in the stock prices. Although slightly lower than Linear Regression's R², the **LSTM** model is designed to capture non-linear relationships and temporal dependencies, making it well-suited for time-series data. The **RMSE** of 3.08 is a bit higher than that of the Linear Regression model, indicating a slightly greater error margin, but the LSTM’s ability to capture complex patterns and sequences gives it an edge in real-world stock price predictions.
+
+   - **Prediction Plot**:  
+     ![LSTM Prediction Plot](https://github.com/AHMEDNUSARI/Dataguess_TeknolojiTask/blob/main/LSTMResult.png)
