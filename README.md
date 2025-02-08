@@ -74,7 +74,7 @@ As mentioned earlier, there are two training processes, and each has its own Pyt
   * Script Name: TrainDefultData.py
   * #### Steps to Run:
     1. Run the script using the following command:
-       python TrainDefultData.py
+       `python TrainDefultData.py`
     2. The script will automatically download Apple stock price data between January 1, 2008, and February 1, 2025.
     3. It will then perform data processing and select the default features: ['Open', 'High', 'Low', 'Volume', 'MA_10', 'MACD', 'OBV']. These features were not selected randomly; after testing various feature combinations, this set was found to deliver the highest performance, as will be explained later.
     4. The user will be prompted to enter 0 or 1 to select the model type:
@@ -90,8 +90,8 @@ As mentioned earlier, there are two training processes, and each has its own Pyt
   * Script Name: TrainingCustomData.py
   * #### Steps to Run:
     1. Run the script using the following command:
-        python TrainingCustomData.py
-    2. The user will be prompted to:
+       `python TrainingCustomData.py`
+    3. The user will be prompted to:
       * Select the company from Yahoo Finance data (e.g., AAPL, TSLA, MSFT, AMZN, GOOGL) and specify the start and end date (e.g., "2000-05-05" to "2025-02-01").
       * Choose the features and indicators you want to apply. Available options include:
         ['Open', 'High', 'Low', 'Volume', 'MA_10', 'RSI', 'MACD', 'BB_High', 'BB_Low', 'ATR', 'OBV'].
