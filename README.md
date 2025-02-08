@@ -27,6 +27,37 @@ The models have been trained on Apple's stock price data between January 1, 2008
 ### Reusable Model Training for Other Datasets:
 The repository is designed to allow easy reuse of the models for training on different stock datasets. Users can retrain the models with data from Yahoo Finance stock market data source by following a simple process outlined in the repository. This flexibility makes it easy to apply the models to other stocks or financial data, providing a scalable solution for stock price prediction across different markets.
 
+## 📚 Project Reports
+This project consists of three main reports that help in understanding the entire process of stock price prediction, from data analysis to model evaluation. These reports provide detailed explanations and visualizations to ensure a clear understanding of how each step contributes to the overall prediction process.
+
+### 1. Data Analysis Report
+  * This report focuses on the statistical analysis of the downloaded stock data. It explores key attributes of the 
+    dataset, such as:
+    * Price behavior (e.g., opening, closing, highs, and lows)
+    * Volume traded
+    * Time-series trends
+  * The report also includes visualizations to provide a better understanding of how these features interact and their role in predicting stock price movements.
+  * The goal of this analysis is to comprehend the stock market data fully before applying any models, ensuring we understand how each feature contributes to the overall price prediction.
+### 2. Feature Engineering & Indicator Application Report
+  * This report delves into the feature engineering process, where we apply technical indicators to the raw stock data to enhance prediction accuracy. It involves:
+    * Applying various indicators such as MA_10, MACD, RSI, BB_High, BB_Low, etc.
+    * Explaining each indicator’s role in stock price prediction, like how Moving Averages smooth out fluctuations, RSI signals overbought or oversold conditions, and MACD shows momentum trends.
+  * The report also includes plots of each indicator, demonstrating their impact on price prediction and their crucial role in understanding market trends.
+### 3. Model Structure Report
+  * This report provides a detailed explanation of the two models used in the project:
+    * **Linear Regression:** A classic approach that assumes a linear relationship between input features and target stock prices.
+    * **LSTM with Attention Mechanism:** A deep learning model that leverages long-term dependencies in time-series data and applies an attention mechanism to focus on the most relevant past data points.
+  * The report details the architecture and working principles of each model, as well as the reasons for selecting these models in the context of stock price prediction.
+    
+## 📊 Evaluation Metrics
+For evaluating model performance, we prefer to use the R² (Coefficient of Determination) metric. Here's why R² is often more useful than RMSE and MAPE:
+
+  * **R²** measures how well the model's predictions match the actual data. It is a better indicator of the model's explanatory power. A higher R² indicates that a larger proportion of the variance in stock prices is explained by the model, making it easier to compare different models in terms of how well they fit the data.
+RMSE (Root Mean Square Error) and MAPE (Mean Absolute Percentage Error) are often used to assess the accuracy of predictions, but they can be misleading in certain scenarios:
+  * **RMSE** gives more weight to large errors, which might distort the model's performance when there are significant outliers in the data.
+  * MAPE can be biased when actual values are close to zero, leading to misleading results for certain types of data, such as stock prices with very low values at certain times.
+Thus, **R²**  is preferred for stock price prediction because it provides a more comprehensive view of the model’s ability to explain the variability in the stock prices, without being heavily affected by outliers or extreme values.
+
 
 
 ## 🖥️ How to Run the Code
@@ -50,7 +81,7 @@ As mentioned earlier, there are two training processes, and each has its own Pyt
 
 ### 2. Reusable Model Training for Custom Datasets
   * Script Name: TrainingCustomData.py
-  * ####Steps to Run:
+  * #### Steps to Run:
     1. Run the script using the following command:
         python TrainingCustomData.py
     2. The user will be prompted to:
