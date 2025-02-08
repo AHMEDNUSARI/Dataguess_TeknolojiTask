@@ -72,7 +72,7 @@ As mentioned earlier, there are two training processes, and each has its own Pyt
     1. Run the script using the following command:
        python TrainDefultData.py
     2. The script will automatically download Apple stock price data between January 1, 2008, and February 1, 2025.
-    3. It will then perform data processing and select default features: ['Open', 'High', 'Low', 'Volume', 'MA_10', 'MACD', 'OBV']. This default features didnot selected randomly, but after training and trying verious feature combinataion, this combination gave higher performance as will be exaplined later
+    3. It will then perform data processing and select the default features: ['Open', 'High', 'Low', 'Volume', 'MA_10', 'MACD', 'OBV']. These features were not selected randomly; after testing various feature combinations, this set was found to deliver the highest performance, as will be explained later.
     4. The user will be prompted to enter 0 or 1 to select the model type:
        * 0: Linear Regression
        * 1: LSTM with Attention Mechanism
