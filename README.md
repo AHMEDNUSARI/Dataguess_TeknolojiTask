@@ -42,10 +42,24 @@ As mentioned earlier, there are two training processes, and each has its own Pyt
     4. The user will be prompted to enter 0 or 1 to select the model type:
        * 0: Linear Regression
        * 1: LSTM with Attention Mechanism
-     5. After training the selected model, the results will be visualized and the following evaluation metrics will be displayed:
+    5. After training the selected model, the results will be visualized and the following evaluation metrics will be displayed:
        * RMSE (Root Mean Square Error)
        * MAPE (Mean Absolute Percentage Error)
        * R² (Coefficient of Determination)
 
 
-
+### 2. Reusable Model Training for Custom Datasets
+  * Script Name: TrainingCustomData.py
+  * ####Steps to Run:
+    1. Run the script using the following command:
+        python TrainingCustomData.py
+    2. The user will be prompted to:
+      * Select the company from Yahoo Finance data (e.g., AAPL, TSLA, MSFT, AMZN, GOOGL) and specify the start and end date (e.g., "2000-05-05" to "2025-02-01").
+      * Choose the features and indicators you want to apply. Available options include:
+        ['Open', 'High', 'Low', 'Volume', 'MA_10', 'RSI', 'MACD', 'BB_High', 'BB_Low', 'ATR', 'OBV'].
+      * Select the time-step sequence. The default is 10, but you can modify this to any value as needed.
+    3. Finally, the user will be asked to select the model type:
+      * 0: Linear Regression
+      * 1: LSTM with Attention Mechanism
+    4. After selecting the model, the script will train the model on the provided dataset, visualize the results, and display the evaluation metrics:
+      * RMSE, MAPE, and R².
