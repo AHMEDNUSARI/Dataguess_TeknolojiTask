@@ -1,4 +1,4 @@
-# Apple Stock Price Prediction Using Deep Learning and Regression Methods
+# Apple Stock Price Prediction with Deep Learning & Regression 🏦📈
 
 ![(https://github.com/AHMEDNUSARI/Dataguess_TeknolojiTask/blob/main/Stock.png)](https://github.com/AHMEDNUSARI/Dataguess_TeknolojiTask/blob/main/Stock.png)
 ## 📌 Overview
@@ -99,12 +99,6 @@ As mentioned earlier, there are two training processes, and each has its own Pyt
       * RMSE, MAPE, and R².
    
 
-# Apple Stock Price Prediction with Deep Learning & Regression 🏦📈
-
-## Overview
-This repository contains models that predict the **Apple stock price** using **Linear Regression** and **LSTM with Attention Mechanism**. The models are trained on historical financial data, and the aim is to assess technical expertise, problem-solving abilities, and familiarity with financial data.
-
-
 
 ### Results of Default Training 🏅
 
@@ -127,3 +121,13 @@ This repository contains models that predict the **Apple stock price** using **L
 
    - **Prediction Plot**:  
      ![LSTM Prediction Plot](https://github.com/AHMEDNUSARI/Dataguess_TeknolojiTask/blob/main/LSTMResult.png)
+
+
+🏁 Conclusion
+In this project, we developed two distinct models—Linear Regression and LSTM with Attention Mechanism—to predict Apple's stock price movement using historical financial data from January 1, 2008, to February 1, 2025. The goal was to compare a traditional regression approach with a deep learning-based model and evaluate their effectiveness in forecasting stock price trends.
+
+The results showed that both models achieved strong performance, with Linear Regression explaining 99.14% of the variance (R² = 0.9914), while LSTM with Attention Mechanism explained 99.02% (R² = 0.9902). While the Linear Regression model had slightly better performance in terms of R² and lower RMSE, the LSTM model's ability to capture complex patterns in sequential data and its superior handling of long-term dependencies demonstrated its strength in more sophisticated forecasting tasks.
+
+The project successfully demonstrated the effectiveness of these models in stock price prediction and showed how deep learning techniques, particularly LSTM with attention mechanisms, can offer valuable insights in financial forecasting tasks. Additionally, the flexibility of the repository makes it easy to train the models on other stock datasets, enhancing the applicability of this work to various financial markets.
+
+Ultimately, this project offers valuable insights into model performance evaluation, the importance of feature engineering, and the practical implications of using machine learning in the stock market.
