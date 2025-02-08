@@ -38,16 +38,19 @@ This project consists of three main reports that help in understanding the entir
     * Time-series trends
   * The report also includes visualizations to provide a better understanding of how these features interact and their role in predicting stock price movements.
   * The goal of this analysis is to comprehend the stock market data fully before applying any models, ensuring we understand how each feature contributes to the overall price prediction.
+  * [View Data Analysis Report](https://github.com/AHMEDNUSARI/Dataguess_TeknolojiTask/blob/main/Reports/Data_Analysis.ipynb)
 ### 2. Feature Engineering & Indicator Application Report
   * This report delves into the feature engineering process, where we apply technical indicators to the raw stock data to enhance prediction accuracy. It involves:
     * Applying various indicators such as MA_10, MACD, RSI, BB_High, BB_Low, etc.
     * Explaining each indicator’s role in stock price prediction, like how Moving Averages smooth out fluctuations, RSI signals overbought or oversold conditions, and MACD shows momentum trends.
   * The report also includes plots of each indicator, demonstrating their impact on price prediction and their crucial role in understanding market trends.
+  * [View Feature Engineering Report](https://github.com/AHMEDNUSARI/Dataguess_TeknolojiTask/blob/main/Reports/Feature_engineer_report.ipynb)
 ### 3. Model Structure Report
   * This report provides a detailed explanation of the two models used in the project:
     * **Linear Regression:** A classic approach that assumes a linear relationship between input features and target stock prices.
     * **LSTM with Attention Mechanism:** A deep learning model that leverages long-term dependencies in time-series data and applies an attention mechanism to focus on the most relevant past data points.
   * The report details the architecture and working principles of each model, as well as the reasons for selecting these models in the context of stock price prediction.
+  * [View Model Structure Report](https://github.com/AHMEDNUSARI/Dataguess_TeknolojiTask/blob/main/Reports/Models_Report.ipynb)
     
 ## 📊 Evaluation Metrics
 For evaluating model performance, we prefer to use the R² (Coefficient of Determination) metric. Here's why R² is often more useful than RMSE and MAPE:
@@ -55,7 +58,7 @@ For evaluating model performance, we prefer to use the R² (Coefficient of Deter
   * **R²** measures how well the model's predictions match the actual data. It is a better indicator of the model's explanatory power. A higher R² indicates that a larger proportion of the variance in stock prices is explained by the model, making it easier to compare different models in terms of how well they fit the data.
 RMSE (Root Mean Square Error) and MAPE (Mean Absolute Percentage Error) are often used to assess the accuracy of predictions, but they can be misleading in certain scenarios:
   * **RMSE** gives more weight to large errors, which might distort the model's performance when there are significant outliers in the data.
-  * MAPE can be biased when actual values are close to zero, leading to misleading results for certain types of data, such as stock prices with very low values at certain times.
+  * **MAPE** can be biased when actual values are close to zero, leading to misleading results for certain types of data, such as stock prices with very low values at certain times.
 Thus, **R²**  is preferred for stock price prediction because it provides a more comprehensive view of the model’s ability to explain the variability in the stock prices, without being heavily affected by outliers or extreme values.
 
 
