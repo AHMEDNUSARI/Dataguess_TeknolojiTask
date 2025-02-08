@@ -66,7 +66,7 @@ Thus, **R²**  is preferred for stock price prediction because it provides a mor
 ## 🖥️ How to Run the Code
 First of all, donot forget to install requirements libs by using this command:
 
-("pip install -r requirements.txt")
+`pip install -r requirements.txt`
 
 As mentioned earlier, there are two training processes, and each has its own Python script. Below are the details on how to run each script:
 
